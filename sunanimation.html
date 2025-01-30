@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            
+            margin: 0px;
+            padding: 0px;
+            
+        }
+        .main{
+            margin-top: 50px;
+            position: relative;
+            width: 100%;
+            height: 250px;
+            /* border: 2px solid black; */
+            overflow: hidden;
+            /* background: skyblue; */
+        }
+        .sun{
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            background:rgb(255, 165, 0 , 0.7);
+            position: absolute;
+            top: 100px;
+            left: -10px;
+            opacity: 0.8;
+            animation: sun 10s forwards  infinite linear;
+
+        }
+        @keyframes sun {
+            from{
+                top: 100px;
+                left: -10px;
+                background-color:rgb(255, 165, 0 , 1);
+            }
+            to{
+                top: 15px;
+                left: 110%;
+                background-color:rgb(255, 165, 0 , 0.7);
+            }
+        }
+        .cloud1{
+            width: 200px;
+            height: 120px;
+            position: absolute;
+            top: 20px;
+            left: -10px;
+           opacity: 0.8;
+           animation: cloud1 15s linear infinite;
+           
+           
+           
+         
+          
+        }
+        .cloud2{
+            width: 200px;
+            height: 120px;
+            position: absolute;
+            top: 40px;
+            left: 500px;
+           opacity: 0.8;
+           
+           animation: cloud2 12s ease-out infinite ;
+           animation-delay: 4s;
+         
+          
+        }
+        .cloud3{
+            width: 200px;
+            height: 120px;
+            position: absolute;
+            top: 20px;
+            left: 1000px;
+           opacity: 0.8;
+           animation: cloud3 6s ease-in infinite;
+           
+           
+         
+          
+        }
+
+        @keyframes cloud1 {
+            from{
+                top: 20px;
+            left: -10px;
+            }
+            to{
+                top: 20px;
+            left: 110%;
+            }
+        }
+
+            @keyframes cloud2 {
+            from{
+                top: 40px;
+                left: 500px;
+            }
+            to{
+                top: 40px;
+            left: 110%;
+            }
+
+            
+        }
+
+        @keyframes cloud3 {
+            from{
+                top: 20px;
+                left: 1000px;
+            }
+            to{
+                top: 20px;
+            left: 110%;
+            }
+
+            
+        }
+    </style>
+</head>
+<body>
+    <div class="main">
+        <div class="sun"></div>
+        <div class="cloud1">
+        <img src="cld1.jpeg" width="100%" height="100%"   alt="">
+    </div>
+        <div class="cloud2">
+            <img src="cld1.jpeg" width="100%" height="100%"   alt="">
+
+        </div>
+        <div class="cloud3">
+            <img src="cld1.jpeg" width="100%" height="100%"   alt="">
+
+        </div>
+
+
+    </div>
+</body>
+</html>
