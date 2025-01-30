@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .main{
+            width: 700px;
+            /*height: 600px; */
+            min-height: 600px;
+            /* min-width: 700px; */
+            border: 2px solid rgb(49, 216, 30);
+            margin: auto;
+            display: grid;
+            padding: 20px;
+            grid-template-columns: auto auto auto;
+            grid-column-gap: 10px;
+            grid-row-gap: 10px;
+            
+        }
+        .main div{
+            padding: 50px;
+            font-size: 50px;
+            border: 2px solid black;
+            background-color: cadetblue;
+           
+        }
+        #div1{
+
+            grid-column-start:1;
+            grid-column-end:3;
+        }
+    </style>
+</head>
+<body>
+    <div class="main">
+<div id="div1">1</div>
+<div>2</div>
+<div>3</div>
+<div>4</div>
+<div>5</div>
+<div>6</div>
+<div>7</div>
+<div>8</div>
+<div>7</div>
+<div>8</div>
+
+
+
+
+
+    </div>
+</body>
+</html>
